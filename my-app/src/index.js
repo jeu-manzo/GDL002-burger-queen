@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import BtnAdd from './components/BtnAdd';
+import BtnAdd from './components/screenTable/BtnAdd';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<BtnAdd />, document.getElementById('root'));
