@@ -1,11 +1,11 @@
 import React from 'react';
 
-class BtnAdd extends React.Component {
+class BtnReady extends React.Component {
     render () {
         return (
             <div>
                 <button>
-                    +
+                    Listos
                 </button>
             </div>
         )
@@ -13,4 +13,4 @@ class BtnAdd extends React.Component {
 }
 
 
-export default BtnAdd
+export default BtnReady
