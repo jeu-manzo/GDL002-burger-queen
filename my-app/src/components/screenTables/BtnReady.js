@@ -1,13 +1,13 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+
 
 class BtnReady extends React.Component {
     render () {
         return (
-            <div>
-                <button>
-                    Listos
-                </button>
-            </div>
+            <Button variant="primary" className="btn-ready">
+                Listos
+            </Button>
         )
     }
 }

@@ -1,13 +1,13 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+
 
 class BtnAdd extends React.Component {
     render () {
         return (
-            <div>
-                <button>
-                    +
-                </button>
-            </div>
+            <Button variant="primary" className="btn-add">
+                +
+            </Button>
         )
     }
 }
