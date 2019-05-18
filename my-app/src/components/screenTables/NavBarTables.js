@@ -1,13 +1,12 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 class NavBarTables extends React.Component {
     render () {
         return (
-            <Navbar collapseOnSelect expand="false" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="false" variant="dark">
               <Navbar.Brand>Mesas - 05 de Agosto del 2018   (Fulanito)</Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
