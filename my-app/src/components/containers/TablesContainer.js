@@ -3,13 +3,10 @@ import React from 'react';
 import NavBarTables from '../NavBarTables'
 import Button from '../Button'
 import Table from '../Table'
+import AddTable from '../AddTable'
 
 
 class TablesContainer extends React.Component {
-
-  btnAdd () {
-    alert("holi")
-  }
 
   btnReady () {
     alert("holi2")
@@ -24,10 +21,11 @@ class TablesContainer extends React.Component {
 
         <div className="btns-tables">
           <Button className="btn-ready" label="Listos" onClick={this.btnReady} />
-          <Button className="btn-add" label="+" onClick={this.btnAdd} />
+          <AddTable/>
         </div>
       </section>
     )
+
 
   }
 
