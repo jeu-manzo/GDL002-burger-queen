@@ -1,34 +1,35 @@
 import React from 'react';
 
-import NavBarTables from '../screenTables/NavBarTables'
-import BtnAdd from '../screenTables/BtnAdd'
-import BtnReady from '../screenTables/BtnReady'
+import NavBarTables from '../NavBarTables'
+import Button from '../Button'
+import Table from '../Table'
+
 
 class TablesContainer extends React.Component {
 
-    render () {
-        return (
-            <section className="tables-container">
-                <NavBarTables/>
-                <section className="tables">
-                    <div className="prueba">Prueba 1</div>
-                    <div className="prueba">Prueba 2</div>
-                    <div className="prueba">Prueba 3</div>
-                    <div className="prueba">Prueba 4</div>
-                    <div className="prueba">Prueba 1</div>
-                    <div className="prueba">Prueba 2</div>
-                    <div className="prueba">Prueba 3</div>
-                    <div className="prueba">Prueba 4</div>
-                </section>
+  btnAdd () {
+    alert("holi")
+  }
 
-                <div className="btns-tables">
-                    <BtnReady/>
-                    <BtnAdd/>
-                </div>
-            </section>
-        )
+  btnReady () {
+    alert("holi2")
+  }
 
-    }
+
+  render () {
+    return (
+      <section className="tables-container">
+        <NavBarTables/>
+        <Table/>
+
+        <div className="btns-tables">
+          <Button className="btn-ready" label="Listos" onClick={this.btnReady} />
+          <Button className="btn-add" label="+" onClick={this.btnAdd} />
+        </div>
+      </section>
+    )
+
+  }
 
 }
 
