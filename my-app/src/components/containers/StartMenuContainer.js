@@ -1,27 +1,23 @@
 import React from 'react';
-
-import NavBarTables from '../NavBarTables'
+import { Link } from 'react-router-dom';
 import Button from '../Button'
-import Table from '../Table'
-import AddTable from '../AddTable'
 
 
 
-class TablesContainer extends React.Component {
 
-  btnReady () {
-    alert("holi2")
-  }
+class StartMenuContainer extends React.Component {
 
-
-  render () {
+    render () {
     return (
-      <section>
-          <Button className="btn-menu" label="CAJA" onClick={this.btnReady} />
-          <Button className="btn-menu" label="PEDIDOS" onClick={this.btnReady} />
-          <Button className="btn-menu" label="COCINA" onClick={this.btnReady} />
-          <Button className="btn-menu" label="BAR" onClick={this.btnReady} />
-          <Button className="btn-menu" label="ADMON" onClick={this.btnReady} />
+      <section className="start-container">
+        <h1 className="welcome">BIENVENIDO</h1>
+        <div className="buttons-menu">
+          <Button className="btn-menu" label={<Link className="link-menu" to='/mesas'>CAJA</Link>}/>
+          <Button className="btn-menu" label={<Link className="link-menu" to='/mesas'>PEDIDOS</Link>}/>
+          <Button className="btn-menu" label={<Link className="link-menu" to='/mesas'>COCINA</Link>}/>
+          <Button className="btn-menu" label={<Link className="link-menu" to='/mesas'>BAR</Link>}/>
+          <Button className="btn-menu" label={<Link className="link-menu" to='/mesas'>ADMON</Link>}/>
+        </div>
       </section>
     )
 
@@ -30,4 +26,4 @@ class TablesContainer extends React.Component {
 
 }
 
-export default TablesContainer
+export default StartMenuContainer
