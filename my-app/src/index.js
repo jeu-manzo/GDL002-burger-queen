@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-import './styles/tablesContainer.css'
-import './styles/startMenuContainer.css'
+import './styles/tablesContainer.css';
+import './styles/startMenuContainer.css';
+import './styles/employeesBarContainer.css';
 import Routers from './router/Routers';
 import * as serviceWorker from './serviceWorker';
 
