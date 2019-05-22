@@ -1,32 +1,45 @@
 import React from 'react';
 import NavBarTables from '../NavBarTables';
 import Button from '../Button';
+import { Link } from 'react-router-dom';
+
 
 const EmployeesContainer = (props) => {
 
-  let string = "";
+  let titleMenu = "";
+  let pathName = "";
+
 
     if (window.location.pathname === "/usuarios-bar") {
-      string = "BAR";
+      titleMenu = "BAR";
+      pathName = "/bar";
     }else if (window.location.pathname === "/usuarios-pedidos") {
-      string = "PEDIDOS";
+      titleMenu = "PEDIDOS";
+      pathName = "/mesas";
     }else if (window.location.pathname === "/usuarios-cocina") {
-      string = "COCINA";
+      titleMenu = "COCINA";
+      pathName = "/cocina";
     }else if (window.location.pathname === "/usuarios-caja") {
-      string = "CAJA";
+      titleMenu = "CAJA";
+      pathName = "/caja";
     }else {
-      string = "ADMINISTRACION";
+      titleMenu = "ADMINISTRACION";
+      pathName = "/administracion";
     }
 
 
   return (
     <section className="employees-container">
-      <NavBarTables label={string} />
+      <NavBarTables label={titleMenu} />
       <div className="buttons-employees">
         {
           props.employees.map((employee, index) => {
             return (
-              <Button className="btn-employee" name={employee} label={employee} key={index} onClick={(e) => console.log(e.target.name)} />
+              <Button className="btn-employee"
+              name={employee}
+              label={<Link className="link-menu-nav" to={pathName}>{employee}</Link>}
+              key={index}
+              onClick={(e) => console.log(e.target.name)} />
             )
           })
         }
