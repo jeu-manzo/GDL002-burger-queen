@@ -73,3 +73,16 @@
     background-color: #2D7DD2;
     border-style: none;
 }
+
+.area-nav {
+  padding: 10px 0 10px 30px;
+}
+
+.link-menu-nav {
+  color: white;
+}
+
+.link-menu-nav:hover {
+  color: pink;
+  text-decoration: none;
+}
