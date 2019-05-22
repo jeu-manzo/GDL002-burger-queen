@@ -4,9 +4,24 @@ import Button from '../Button';
 
 const EmployeesContainer = (props) => {
 
+  let string = "";
+
+    if (window.location.pathname === "/usuarios-bar") {
+      string = "BAR";
+    }else if (window.location.pathname === "/usuarios-pedidos") {
+      string = "PEDIDOS";
+    }else if (window.location.pathname === "/usuarios-cocina") {
+      string = "COCINA";
+    }else if (window.location.pathname === "/usuarios-caja") {
+      string = "CAJA";
+    }else {
+      string = "ADMINISTRACION";
+    }
+
+
   return (
     <section className="employees-container">
-      <NavBarTables label="Area" />
+      <NavBarTables label={string} />
       <div className="buttons-employees">
         {
           props.employees.map((employee, index) => {
