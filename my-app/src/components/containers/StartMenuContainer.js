@@ -15,7 +15,7 @@ class StartMenuContainer extends React.Component {
           <Button className="btn-menu" label={<Link className="link-menu" to='/mesas'>CAJA</Link>}/>
           <Button className="btn-menu" label={<Link className="link-menu" to='/mesas'>PEDIDOS</Link>}/>
           <Button className="btn-menu" label={<Link className="link-menu" to='/mesas'>COCINA</Link>}/>
-          <Button className="btn-menu" label={<Link className="link-menu" to='/mesas'>BAR</Link>}/>
+          <Button className="btn-menu" label={<Link className="link-menu" to='/bar-empleados'>BAR</Link>}/>
           <Button className="btn-menu" label={<Link className="link-menu" to='/mesas'>ADMON</Link>}/>
         </div>
       </section>

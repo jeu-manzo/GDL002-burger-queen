@@ -2,7 +2,20 @@ let employees = {
   "bar": [
     "Inti",
     "Flore",
-    "Juan"
+    "Juan",
+    "Inti",
+    "Flore",
+    "Juan",
+    "Inti",
+    "Flore",
+    "Monse",
+    "Juan",
+    "Inti",
+    "Flore",
+    "Juan",
+    "Inti",
+    "Flore",
+    "Monse"
   ],
   "kitchen": [
     "Perla",

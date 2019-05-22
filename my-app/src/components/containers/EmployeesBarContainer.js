@@ -1,30 +1,38 @@
 import React from 'react';
 import NavBarTables from '../NavBarTables';
 import Button from '../Button';
-import employees from '../data/employees'
+import employees from '../../data/employees';
 
+class EmployeesBarContainer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      employees: []
+    }
+  }
 
-class CommandContainer extends React.Component {
-
-  employeesBar = employees.bar.map( employee => employee);
+  componentDidMount () {
+    this.setState({ employees: employees.bar })
+  }
 
   render () {
     return (
-      <section className="command-container">
+      <section className="emp-bar-container">
         <NavBarTables/>
-        {
-          this.employeesBar.map((btn) => {
-            return (
-              <Button className="btn-ready" label={btn}/>
-            )
-          })
-        }
+        <div className="buttons-employees">
+          {
+            this.state.employees.map((btn, index) => {
+              return (
+                <Button className="btn-employee" label={btn} key={index} />
+              )
+            })
+          }
+        </div>
       </section>
     )
-
 
   }
 
 }
 
-export default CommandContainer
+export default EmployeesBarContainer;
