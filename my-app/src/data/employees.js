@@ -32,6 +32,15 @@ let employees = {
     "Lucy",
     "Susy"
   ],
+  "checkoutCash": [
+    "Luciė",
+    "Karen",
+    "Lucero",
+    "Jeu",
+    "Moni",
+    "Lucy",
+    "Susy"
+  ],
   "administration": [
     "Ofe",
     "Sam"
