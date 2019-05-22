@@ -5,7 +5,9 @@ const Button = (props) => {
   return <Btn
     variant="primary"
     className={props.className}
-    onClick={props.onClick}>
+    name={props.name}
+    onClick={props.onClick}
+    id={props.id}>
     {props.label}
   </Btn>
 

@@ -16,19 +16,19 @@ class Routers extends React.Component {
           <Route exact path="/" component={StartMenuContainer} />
           <Route exact path="/inicio" component={StartMenuContainer}/>
           <Route exact path="/mesas" component={TablesContainer} />
-          <Route exact path="/bar-empleados" render={(routeProps) => (
+          <Route exact path="/usuarios-bar" render={(routeProps) => (
             <EmployeesContainer {...routeProps} employees={employees.bar} />
           )} />
-          <Route exact path="/cocina-empleados" render={(routeProps) => (
+          <Route exact path="/usuarios-cocina" render={(routeProps) => (
             <EmployeesContainer {...routeProps} employees={employees.kitchen} />
           )} />
-          <Route exact path="/pedidos-empleados" render={(routeProps) => (
+          <Route exact path="/usuarios-pedidos" render={(routeProps) => (
             <EmployeesContainer {...routeProps} employees={employees.waiters} />
           )} />
-          <Route exact path="/admon-empleados" render={(routeProps) => (
+          <Route exact path="/usuarios-administracion" render={(routeProps) => (
             <EmployeesContainer {...routeProps} employees={employees.administration} />
           )} />
-          <Route exact path="/caja-empleados" render={(routeProps) => (
+          <Route exact path="/usuarios-caja" render={(routeProps) => (
             <EmployeesContainer {...routeProps} employees={employees.checkoutCash} />
           )} />
 

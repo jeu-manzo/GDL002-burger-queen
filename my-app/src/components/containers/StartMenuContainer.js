@@ -12,11 +12,11 @@ class StartMenuContainer extends React.Component {
       <section className="start-container">
         <h1 className="welcome">BIENVENIDO</h1>
         <div className="buttons-menu">
-          <Button className="btn-menu" label={<Link className="link-menu" to='/caja-empleados'>CAJA</Link>}/>
-          <Button className="btn-menu" label={<Link className="link-menu" to='/pedidos-empleados'>PEDIDOS</Link>}/>
-          <Button className="btn-menu" label={<Link className="link-menu" to='/cocina-empleados'>COCINA</Link>}/>
-          <Button className="btn-menu" label={<Link className="link-menu" to='/bar-empleados'>BAR</Link>}/>
-          <Button className="btn-menu" label={<Link className="link-menu" to='/admon-empleados'>ADMON</Link>}/>
+          <Button className="btn-menu" label={<Link className="link-menu" to='/usuarios-caja'>CAJA</Link>}/>
+          <Button className="btn-menu" label={<Link className="link-menu" to='/usuarios-pedidos'>PEDIDOS</Link>}/>
+          <Button className="btn-menu" label={<Link className="link-menu" to='/usuarios-cocina'>COCINA</Link>}/>
+          <Button className="btn-menu" label={<Link className="link-menu" to='/usuarios-bar'>BAR</Link>}/>
+          <Button className="btn-menu" label={<Link className="link-menu" to='/usuarios-administracion'>ADMON</Link>}/>
         </div>
       </section>
     )

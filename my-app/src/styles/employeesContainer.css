@@ -11,6 +11,7 @@
   justify-content: center;
   flex-flow: row wrap;
   justify-content: space-around;
+  align-content: flex-start;
   margin-top: 40px;
 }
 
@@ -19,5 +20,25 @@
   height: 100px;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 40px;
+  background-color: #eb7a49;
+  border-color: #eb7a49;
+  border-radius: 50px;
+  color: black;
+}
+
+.btn-employee:hover {
+  background-color: #EF946C;
+  border-color: #EF946C;
+  color: black;
+}
+
+.btn-employee:not(:disabled):not(.disabled):active{
+  background-color: #EF946C;
+  border-color: #EF946C;
+  color: black;
+}
+
+.employee-footer {
+  padding: 30px;
 }

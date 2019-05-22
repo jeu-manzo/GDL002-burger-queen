@@ -17,7 +17,7 @@ class TablesContainer extends React.Component {
   render () {
     return (
       <section className="tables-container">
-        <NavBarTables/>
+        <NavBarTables label="Mesas"/>
         <Table/>
 
         <div className="btns-tables">
