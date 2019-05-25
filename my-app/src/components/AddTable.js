@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from 'react-bootstrap/Modal'
 import FormGroupTable from './FormGroupTable'
 import Button from './Button'
+import { Link } from 'react-router-dom';
 
 
 
@@ -11,6 +12,7 @@ class AddTable  extends React.Component {
 
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
+    this.crateNewTable = this.createNewTable.bind(this);
 
     this.state = {
       show: false,
@@ -25,6 +27,10 @@ class AddTable  extends React.Component {
     this.setState({ show: true });
   }
 
+  createNewTable() {
+    console.log("hola");
+  }
+
   render() {
     return (
       <>
@@ -36,7 +42,10 @@ class AddTable  extends React.Component {
           </Modal.Header>
           <Modal.Body>{<FormGroupTable/>}</Modal.Body>
           <Modal.Footer>
-            <Button variant="primary" label="Crear Mesa" onClick={this.handleClose}></Button>
+            <Button variant="primary"
+            label={<Link className="link-menu-nav" to='/comanda'>Crear Mesa</Link>}
+            onClick={this.createNewTable}>
+            </Button>
           </Modal.Footer>
         </Modal>
       </>

@@ -2,7 +2,8 @@ import React from 'react';
 import TablesContainer from '../components/containers/TablesContainer';
 import StartMenuContainer from '../components/containers/StartMenuContainer';
 import EmployeesContainer from '../components/containers/EmployeesContainer';
-// import CommandContainer from '../components/containers/CommandContainer'
+import CommandContainer from '../components/containers/CommandContainer';
+
 import employees from '../data/employees';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ class Routers extends React.Component {
           <Route exact path="/" component={StartMenuContainer} />
           <Route exact path="/inicio" component={StartMenuContainer}/>
           <Route exact path="/mesas" component={TablesContainer} />
+          <Route exact path="/comanda" component={CommandContainer} />
           <Route exact path="/usuarios-bar" render={(routeProps) => (
             <EmployeesContainer {...routeProps} employees={employees.bar} />
           )} />

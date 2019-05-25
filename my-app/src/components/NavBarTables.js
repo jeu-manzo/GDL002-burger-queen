@@ -17,7 +17,7 @@ const NavBarTables = (props) =>  {
 
   return (
       <Navbar collapseOnSelect expand="false" variant="dark">
-        <Navbar.Brand>{props.label} - {day} {month} {year} </Navbar.Brand>
+        <Navbar.Brand>{props.label} - {day} {month} {year} {props.labelTwo}</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
