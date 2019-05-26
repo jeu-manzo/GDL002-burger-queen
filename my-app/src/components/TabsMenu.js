@@ -2,27 +2,19 @@ import React from 'react';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import AccordionCollapse from './AccordionCollapse'
-import food from '../data/food3.js'
+import getMeal from '../data/functions'
+
 
 
 
 const TabsMenu = (props) => {
-  function getMealTime(time, both, types) {
-    const mealTime = food.filter(meal => meal.mealTime === time || meal.mealTime === both)
-    const mealType = mealTime.filter(type => type.type === types)
-    const mealClass = mealType.map(meal => meal.class)
-    const classIndex = mealClass[0];
-    const classType = classIndex.map(index => index.className)
-    return classType
-  }
 
-
-  const breakFastFood = getMealTime("Desayuno", "Ambos", "Alimento");
-  const breakFastDrinks = getMealTime("Desayuno", "Ambos", "Bebidas");
-  const breakFastDesserts = getMealTime("Desayuno", "Ambos", "Postres");
-  const lunchFood = getMealTime("Comida", "Ambos", "Alimento");
-  const lunchDrinks = getMealTime("Comida", "Ambos", "Bebidas");
-  const lunchDesserts = getMealTime("Comida", "Ambos", "Postres");
+  const breakFastFood = getMeal("Desayuno", "Ambos", "Alimento");
+  const breakFastDrinks = getMeal("Desayuno", "Ambos", "Bebidas");
+  const breakFastDesserts = getMeal("Desayuno", "Ambos", "Postres");
+  const lunchFood = getMeal("Comida", "Ambos", "Alimento");
+  const lunchDrinks = getMeal("Comida", "Ambos", "Bebidas");
+  const lunchDesserts = getMeal("Comida", "Ambos", "Postres");
 
   return (
     <>

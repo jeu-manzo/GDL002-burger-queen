@@ -1,93 +1,131 @@
 let menu = [
+
   {
-    hour: "Desayuno",
+    mealTime: "Desayuno",
     type: "Alimento",
-    class: 'Chilaquiles',
-    name: "Verdes",
-    price: 45,
-    stock: true
+    class: [
+      {
+        className: "Chilaquiles",
+        classType: [
+          {
+            name: "Verdes",
+            price: 45,
+            stock: true
+          },
+          {
+            name: "Rojos",
+            price: 45,
+            stock: true
+          },
+        ]
+      },
+      {
+        className: "Huevos",
+        classType: [
+          {
+            name: "Revueltos",
+            price: 45,
+            stock: true
+          },
+          {
+            name: "Mexicana",
+            price: 45,
+            stock: true
+          },
+        ]
+      }
+    ]
   },
   {
-    hour: "Desayuno",
-    type: "Alimento",
-    class: 'Chilaquiles',
-    name: "Rojos",
-    price: 45,
-    stock: true
+    mealTime: "Ambos",
+    type: "Bebidas",
+    class: [
+      {
+        className: "Café",
+        classType: [
+          {
+            name: "Espresso",
+            price: 45,
+            stock: true
+          },
+          {
+            name: "Espresso Americano",
+            price: 45,
+            stock: true
+          },
+        ]
+      },
+      {
+        className: "Tisanas",
+        classType: [
+          {
+            name: "Hierbabuena",
+            price: 45,
+            stock: true
+          },
+          {
+            name: "Frutal",
+            price: 45,
+            stock: true
+          },
+        ]
+      }
+    ]
   },
   {
-    hour: "Desayuno",
+    mealTime: "Comida",
     type: "Alimento",
-    class: 'Huevos',
-    name: "Estrellados",
-    price: 45,
-    stock: true
+    class: [
+      {
+        className: "Paninis",
+        classType: [
+          {
+            name: "Jamón",
+            price: 45,
+            stock: true
+          }
+        ]
+      }
+    ]
   },
   {
-    hour: "Desayuno",
-    type: "Alimento",
-    class: 'Huevos',
-    name: "Revueltos 1 Ingrediente",
-    price: 45,
-    stock: true
-  },
-  {
-    hour: "Desayuno",
-    type: "Alimento",
-    class: 'Huevos',
-    name: "Rancheros",
-    price: 45,
-    stock: true
-  },
-  {
-    hour: "Desayuno",
-    type: "Alimento",
-    class: 'Huevos',
-    name: "A la Mexicana",
-    price: 45,
-    stock: true
-  },
-  {
-    hour: "Desayuno",
-    type: "Alimento",
-    class: 'Huevos',
-    name: "2 Ingredientes",
-    price: 45,
-    stock: true
-  },
-  {
-    hour: "Desayuno",
-    type: "Alimento",
-    class: 'Quesadillas',
-    name: "Jamón",
-    price: 40,
-    stock: true
-  },
-  {
-    hour: "Desayuno",
-    type: "Alimento",
-    class: 'Quesadillas',
-    name: "Champiñones",
-    price: 40,
-    stock: true
-  },
-  {
-    hour: "Comida",
-    type: "Alimento",
-    class: 'Paninis',
-    name: "Jamon",
-    price: 45,
-    stock: true
-  },
-  {
-    hour: "Comida",
-    type: "Alimento",
-    class: 'Paninis',
-    name: "Pavo",
-    price: 45,
-    stock: true
+    mealTime: "Ambos",
+    type: "Postres",
+    class: [
+      {
+        className: "Rebanada Pastel",
+        classType: [
+          {
+            name: "Chocolate",
+            price: 45,
+            stock: true
+          },
+          {
+            name: "Vainillas",
+            price: 45,
+            stock: true
+          },
+        ]
+      },
+      {
+        className: "Crepa",
+        classType: [
+          {
+            name: "Nutella",
+            price: 45,
+            stock: true
+          },
+          {
+            name: "Fresas",
+            price: 45,
+            stock: true
+          },
+        ]
+      }
+    ]
   },
 
 ];
+
 
 export default menu;
