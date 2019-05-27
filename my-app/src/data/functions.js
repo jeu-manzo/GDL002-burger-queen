@@ -10,24 +10,29 @@ function getMealClassName(time, bothTimes, types) {
 }
 
 
-function testing(time, both, types) {
+
+function compareMeals(time, both, types, classMeal) {
   const mealTime = menu.filter(meal => meal.mealTime === time || meal.mealTime === both)
   const mealType = mealTime.filter(type => type.type === types)
   const mealClass = mealType.map(meal => meal.class)
   const classIndex = mealClass[0];
-  const className = classIndex.filter(name => name.className === "Chilaquiles")
+  const className = classIndex.filter(name => name.className === classMeal)
   const classType = className.map(type => type.classType)
   const classTypeIndex = classType[0]
   return classTypeIndex
 }
 
+const prueba = getMealClassName("Desayuno", "Ambos", "Alimento")
+
+function getMealsName(time, both, types, classMeal){
+  const arrayMeals = classMeal.map((meals) => compareMeals(time, both, types, meals))
+  const arrayNameMeals = arrayMeals.map((x) => x.map((y) => y.name))
+  return arrayNameMeals;
+}
+
+
+console.log(getMealsName("Desayuno", "Ambos", "Alimento", prueba));
 
 
 
-
-console.log(testing("Desayuno", "Ambos", "Alimento"));
-
-
-
-
-export default getMealClassName
+export default { getMealClassName, getMealsName }
