@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/GDL002-burger-queen/inicio/static/css/main.3ae677d9.chunk.css",
-    "main.js": "/GDL002-burger-queen/inicio/static/js/main.fa936611.chunk.js",
-    "main.js.map": "/GDL002-burger-queen/inicio/static/js/main.fa936611.chunk.js.map",
-    "runtime~main.js": "/GDL002-burger-queen/inicio/static/js/runtime~main.b3fd3958.js",
-    "runtime~main.js.map": "/GDL002-burger-queen/inicio/static/js/runtime~main.b3fd3958.js.map",
-    "static/js/2.2aee02a8.chunk.js": "/GDL002-burger-queen/inicio/static/js/2.2aee02a8.chunk.js",
-    "static/js/2.2aee02a8.chunk.js.map": "/GDL002-burger-queen/inicio/static/js/2.2aee02a8.chunk.js.map",
-    "index.html": "/GDL002-burger-queen/inicio/index.html",
-    "precache-manifest.3c577fe7c6b68c1111f665c683cb8fa0.js": "/GDL002-burger-queen/inicio/precache-manifest.3c577fe7c6b68c1111f665c683cb8fa0.js",
-    "service-worker.js": "/GDL002-burger-queen/inicio/service-worker.js",
-    "static/css/main.3ae677d9.chunk.css.map": "/GDL002-burger-queen/inicio/static/css/main.3ae677d9.chunk.css.map"
+    "main.css": "/GDL002-burger-queen/my-app/static/css/main.3ae677d9.chunk.css",
+    "main.js": "/GDL002-burger-queen/my-app/static/js/main.3bcc49b8.chunk.js",
+    "main.js.map": "/GDL002-burger-queen/my-app/static/js/main.3bcc49b8.chunk.js.map",
+    "runtime~main.js": "/GDL002-burger-queen/my-app/static/js/runtime~main.bbf35289.js",
+    "runtime~main.js.map": "/GDL002-burger-queen/my-app/static/js/runtime~main.bbf35289.js.map",
+    "static/js/2.2aee02a8.chunk.js": "/GDL002-burger-queen/my-app/static/js/2.2aee02a8.chunk.js",
+    "static/js/2.2aee02a8.chunk.js.map": "/GDL002-burger-queen/my-app/static/js/2.2aee02a8.chunk.js.map",
+    "index.html": "/GDL002-burger-queen/my-app/index.html",
+    "precache-manifest.f587223df9bf6b21d0df7c36d05cb794.js": "/GDL002-burger-queen/my-app/precache-manifest.f587223df9bf6b21d0df7c36d05cb794.js",
+    "service-worker.js": "/GDL002-burger-queen/my-app/service-worker.js",
+    "static/css/main.3ae677d9.chunk.css.map": "/GDL002-burger-queen/my-app/static/css/main.3ae677d9.chunk.css.map"
   }
 }
