@@ -1,38 +1,37 @@
 import menu from '../data/menu'
 
 function getMealClassName(time, bothTimes, types) {
-  const mealTime = menu.filter(meal => meal.mealTime === time || meal.mealTime === bothTimes)
-  const mealType = mealTime.filter(type => type.type === types)
-  const mealClass = mealType.map(meal => meal.class)
-  const classIndex = mealClass[0];
-  const classType = classIndex.map(index => index.className)
-  return classType
+  const mealTime = menu.filter(timeMeal => timeMeal.hour === time || timeMeal.hour === bothTimes)
+  const mealType = mealTime.filter(typeMeal => typeMeal.type === types)
+  const mealsName = mealType.map((meal) => meal.class)
+  const mealsNameUnique = mealsName.filter((item, index) => mealsName.indexOf(item) >= index )
+  return mealsNameUnique
 }
 
 
-
-function compareMeals(time, both, types, classMeal) {
-  const mealTime = menu.filter(meal => meal.mealTime === time || meal.mealTime === both)
-  const mealType = mealTime.filter(type => type.type === types)
-  const mealClass = mealType.map(meal => meal.class)
-  const classIndex = mealClass[0];
-  const className = classIndex.filter(name => name.className === classMeal)
-  const classType = className.map(type => type.classType)
-  const classTypeIndex = classType[0]
-  return classTypeIndex
-}
-
-const prueba = getMealClassName("Desayuno", "Ambos", "Alimento")
-
-function getMealsName(time, both, types, classMeal){
-  const arrayMeals = classMeal.map((meals) => compareMeals(time, both, types, meals))
-  const arrayNameMeals = arrayMeals.map((x) => x.map((y) => y.name))
-  return arrayNameMeals;
+function getMealsName(meal) {
+  const mealClass = menu.filter(classMeal => classMeal.class === meal)
+  const mealName = mealClass.map(nameMeal => nameMeal.name)
+  return mealName
 }
 
 
-console.log(getMealsName("Desayuno", "Ambos", "Alimento", prueba));
+const breakFastFood = getMealClassName("Desayuno", "Ambos", "Alimento");
+const breakFastDrinks = getMealClassName("Desayuno", "Ambos", "Bebidas");
+const breakFastDesserts = getMealClassName("Desayuno", "Ambos", "Postres");
+const lunchFood = getMealClassName("Comida", "Ambos", "Alimento");
+const lunchDrinks = getMealClassName("Comida", "Ambos", "Bebidas");
+const lunchDesserts = getMealClassName("Comida", "Ambos", "Postres");
 
 
 
-export default { getMealClassName, getMealsName }
+
+export default {
+  getMealsName,
+  breakFastFood,
+  breakFastDrinks,
+  breakFastDesserts,
+  lunchFood,
+  lunchDrinks,
+  lunchDesserts
+}

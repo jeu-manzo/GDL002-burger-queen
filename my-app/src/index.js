@@ -4,6 +4,7 @@ import './styles/index.css';
 import './styles/tablesContainer.css';
 import './styles/startMenuContainer.css';
 import './styles/employeesContainer.css';
+import './styles/commandContainer.css';
 import Routers from './router/Routers';
 import * as serviceWorker from './serviceWorker';
 
