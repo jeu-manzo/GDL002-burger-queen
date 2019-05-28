@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 class Routers extends React.Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <>
           <Route exact path="/" component={StartMenuContainer} />
           <Route exact path="/inicio" component={StartMenuContainer}/>
