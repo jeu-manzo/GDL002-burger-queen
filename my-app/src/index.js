@@ -5,7 +5,7 @@ import './styles/tablesContainer.css';
 import './styles/startMenuContainer.css';
 import './styles/employeesContainer.css';
 import './styles/commandContainer.css';
-import Routers from './router/Routers';
+import Routers from './Routers';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Routers />, document.getElementById('root'));

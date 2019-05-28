@@ -1,11 +1,11 @@
 import React from 'react';
-import TablesContainer from '../components/containers/TablesContainer';
-import StartMenuContainer from '../components/containers/StartMenuContainer';
-import EmployeesContainer from '../components/containers/EmployeesContainer';
-import CommandContainer from '../components/containers/CommandContainer';
+import TablesContainer from './components/containers/TablesContainer';
+import StartMenuContainer from './components/containers/StartMenuContainer';
+import EmployeesContainer from './components/containers/EmployeesContainer';
+import CommandContainer from './components/containers/CommandContainer';
 
 
-import employees from '../data/employees';
+import employees from './data/employees';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
