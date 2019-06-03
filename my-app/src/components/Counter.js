@@ -10,19 +10,20 @@ class Counter  extends React.Component {
     this.incrementCount = this.incrementCount.bind(this);
     this.decrementCount = this.decrementCount.bind(this);
     this.state = {
-      incrementField: '',
-      decrementField: '',
-
-
+      counterField: 0,
     };
   }
 
   incrementCount() {
-    alert("suma")
+    return this.setState(({ counterField }) => ({
+      counterField: counterField + 1
+    }));
   }
 
   decrementCount() {
-    alert("resta")
+    return this.setState(({ counterField }) => ({
+      counterField: counterField - 1
+    }));
   }
 
 
@@ -31,7 +32,7 @@ class Counter  extends React.Component {
       <>
         <Button className="btn-counter" label="+" onClick={this.incrementCount}/>
         <Button className="btn-counter" label="-" onClick={this.decrementCount}/>
-        <h1>0</h1>
+        <h1>{this.state.counterField}</h1>
       </>
     );
   }
