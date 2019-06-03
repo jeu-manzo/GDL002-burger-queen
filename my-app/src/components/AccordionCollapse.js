@@ -2,6 +2,7 @@ import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import getMeal from '../data/functions'
+import Counter from './Counter'
 
 const AccordionCollapse = (props) => {
 
@@ -17,7 +18,14 @@ const AccordionCollapse = (props) => {
               {
                 getMeal.getMealsName(title).map((value, subindex) => (
                   <Accordion.Collapse key={subindex} eventKey={index.toString()}>
-                        <Card.Body bsPrefix="title-collapse" >{value}</Card.Body>
+                        <Card.Body bsPrefix="title-collapse" >
+                          {
+                            <div className="container-counter">
+                              <Counter />
+                              {value}
+                            </div>
+                          }
+                        </Card.Body>
                   </Accordion.Collapse>
                 ))
               }

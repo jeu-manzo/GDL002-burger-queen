@@ -6,3 +6,11 @@
 .title-collapse {
   background-color: white;
 }
+
+.container-counter {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
