@@ -6,7 +6,7 @@ import CommandContainer from './components/containers/CommandContainer';
 
 
 import employees from './data/employees';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 
 
@@ -15,7 +15,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 class Routers extends React.Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <>
           <Route exact path="/" component={StartMenuContainer} />
           <Route exact path="/inicio" component={StartMenuContainer}/>
@@ -36,9 +36,8 @@ class Routers extends React.Component {
           <Route exact path="/usuarios-caja" render={(routeProps) => (
             <EmployeesContainer {...routeProps} employees={employees.checkoutCash} />
           )} />
-
         </>
-      </Router>
+      </HashRouter>
     )
   }
 }
