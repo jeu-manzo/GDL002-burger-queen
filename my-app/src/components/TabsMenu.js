@@ -11,11 +11,11 @@ const TabsMenu = (props) => {
 
   return (
     <>
-      <Tabs defaultActiveKey="comida-cena">
-        <Tab eventKey="desayuno" title="Desayuno">
-          <Tabs defaultActiveKey="alimentos-desayuno">
+      <Tabs className="food-tabs" defaultActiveKey="comida-cena">
+        <Tab eventKey="desayuno" title="Desayuno" className="examp">
+          <Tabs className="food-subTab" defaultActiveKey="alimentos-desayuno">
             <Tab eventKey="alimentos-desayuno" title="Alimentos">
-              <AccordionCollapse mealsTime={getMeal.breakFastFood} />
+              <AccordionCollapse  mealsTime={getMeal.breakFastFood} />
             </Tab>
             <Tab eventKey="bebidas-desayuno" title="Bebidas">
               <AccordionCollapse mealsTime={getMeal.breakFastDrinks} />
@@ -26,7 +26,7 @@ const TabsMenu = (props) => {
           </Tabs>
         </Tab>
         <Tab eventKey="comida-cena" title="Comida/Cena">
-        <Tabs defaultActiveKey="alimentos-comida">
+        <Tabs className="food-subTab" defaultActiveKey="alimentos-comida">
           <Tab eventKey="alimentos-comida" title="Alimentos">
             <AccordionCollapse mealsTime={getMeal.lunchFood} />
           </Tab>

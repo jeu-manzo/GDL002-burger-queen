@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBarTables from '../NavBarTables';
 import TabsMenu from '../TabsMenu'
-
+import Button from '../Button'
 
 
 
@@ -14,11 +14,11 @@ const CommandContainer = (props) => {
   return (
     <section className="command-container">
       <NavBarTables label="Comanda" labelTwo=" - (Fulanito)" />
-      <header>
+      <main className="command" >
         <TabsMenu />
-
-      </header>
-      <main>
+        <div className="command-div">
+          <Button className="summary" label="RESUMEN COMANDA"/>
+        </div>
       </main>
 
 

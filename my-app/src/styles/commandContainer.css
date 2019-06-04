@@ -1,6 +1,15 @@
+.accordion {
+  margin-top: 40px;
+  flex: 1;
+  overflow: auto;
+}
+
 .title-card {
+  display: flex;
+  justify-content: center;
   background-color: grey;
   border: 2px solid black;
+  font-size: 50px;
 }
 
 .title-collapse {
@@ -10,7 +19,98 @@
 .container-counter {
   display: flex;
   flex-flow: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
+}
+
+.container-counter-two {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.container-counter-two > h1 {
+  font-size: 40px;
+}
+
+.container-counter-two > p  {
+  align-items: baseline;
+  color: red;
+  font-size: 30px;
+}
+
+.btn-counter {
+  height: 120px;
+  width: 120px;
+  font-size: 100px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-tabs, .food-subTab {
+  display: flex;
+}
+
+.food-tabs {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  justify-content: center;
+  border-bottom: none;
+
+}
+
+.food-subTab {
+  font-size: 30px;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  border-bottom: none;
+}
+
+.food-tabs > a.active {
+    color: red;
+    border-color: #dee2e6 #dee2e6 #fff;
+    border-radius: 50px;
+}
+
+.food-tabs > a.active, .food-tabs{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.food-subTab a.active {
+    color: #495057;
+    border-color: #dee2e6 #dee2e6 #fff;
+    border-radius: 50px;
+}
+
+.summary {
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 50px;
+  align-self: center;
+
+}
+
+.command {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.command-div {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border: 2px solid red;
+  background-color: black;
+}
+
+.command-container {
+  height: 100%;
+  border: 2px solid yellow;
 }
