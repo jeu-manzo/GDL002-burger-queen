@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/GDL002-burger-queen/my-app/static/css/main.3ae677d9.chunk.css",
-    "main.js": "/GDL002-burger-queen/my-app/static/js/main.5a1794e0.chunk.js",
-    "main.js.map": "/GDL002-burger-queen/my-app/static/js/main.5a1794e0.chunk.js.map",
+    "main.css": "/GDL002-burger-queen/my-app/static/css/main.fcbf991b.chunk.css",
+    "main.js": "/GDL002-burger-queen/my-app/static/js/main.2880c332.chunk.js",
+    "main.js.map": "/GDL002-burger-queen/my-app/static/js/main.2880c332.chunk.js.map",
     "runtime~main.js": "/GDL002-burger-queen/my-app/static/js/runtime~main.bbf35289.js",
     "runtime~main.js.map": "/GDL002-burger-queen/my-app/static/js/runtime~main.bbf35289.js.map",
-    "static/js/2.2aee02a8.chunk.js": "/GDL002-burger-queen/my-app/static/js/2.2aee02a8.chunk.js",
-    "static/js/2.2aee02a8.chunk.js.map": "/GDL002-burger-queen/my-app/static/js/2.2aee02a8.chunk.js.map",
+    "static/js/2.494c0359.chunk.js": "/GDL002-burger-queen/my-app/static/js/2.494c0359.chunk.js",
+    "static/js/2.494c0359.chunk.js.map": "/GDL002-burger-queen/my-app/static/js/2.494c0359.chunk.js.map",
     "index.html": "/GDL002-burger-queen/my-app/index.html",
-    "precache-manifest.45bace250781af7f9a93f2bf2495e2de.js": "/GDL002-burger-queen/my-app/precache-manifest.45bace250781af7f9a93f2bf2495e2de.js",
+    "precache-manifest.6f0ae62a693bdbec245682f52f2380f3.js": "/GDL002-burger-queen/my-app/precache-manifest.6f0ae62a693bdbec245682f52f2380f3.js",
     "service-worker.js": "/GDL002-burger-queen/my-app/service-worker.js",
-    "static/css/main.3ae677d9.chunk.css.map": "/GDL002-burger-queen/my-app/static/css/main.3ae677d9.chunk.css.map"
+    "static/css/main.fcbf991b.chunk.css.map": "/GDL002-burger-queen/my-app/static/css/main.fcbf991b.chunk.css.map"
   }
 }
