@@ -10,16 +10,16 @@ const EmployeesContainer = (props) => {
   let pathName = "";
 
 
-    if (window.location.pathname === "/usuarios-bar") {
+    if (window.location.hash === "#/usuarios-bar") {
       titleMenu = "BAR";
       pathName = "/bar";
-    }else if (window.location.pathname === "/usuarios-pedidos") {
+    }else if (window.location.hash === "#/usuarios-pedidos") {
       titleMenu = "PEDIDOS";
       pathName = "/mesas";
-    }else if (window.location.pathname === "/usuarios-cocina") {
+    }else if (window.location.hash === "#/usuarios-cocina") {
       titleMenu = "COCINA";
       pathName = "/cocina";
-    }else if (window.location.pathname === "/usuarios-caja") {
+    }else if (window.location.hash === "#/usuarios-caja") {
       titleMenu = "CAJA";
       pathName = "/caja";
     }else {

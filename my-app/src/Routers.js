@@ -6,7 +6,7 @@ import CommandContainer from './components/containers/CommandContainer';
 
 
 import employees from './data/employees';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 
 
@@ -31,7 +31,7 @@ class Routers extends React.Component {
           <Route exact path="/usuarios-pedidos" render={(routeProps) => (
             <EmployeesContainer {...routeProps} employees={employees.waiters} />
           )} />
-          <Route exact path="/usuarios-administracion" render={(routeProps) => (
+          <Route exact path="/usuarios-administracion" render={(routeProps) => console.log("administracion") ||  (
             <EmployeesContainer {...routeProps} employees={employees.administration} />
           )} />
           <Route exact path="/usuarios-caja" render={(routeProps) => (

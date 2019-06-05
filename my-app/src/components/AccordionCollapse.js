@@ -29,7 +29,7 @@ class AccordionCollapse extends React.Component {
 render() {
     return (
       <>
-        <Accordion defaultActiveKey="0">
+        <Accordion className="holi" defaultActiveKey="0">
           {
             this.props.mealsTime.map((title, index) =>
               <Card bsPrefix="total-card" key={index}>

@@ -15,6 +15,7 @@ class TablesContainer extends React.Component {
 
 
   render () {
+    console.log(window.location.hash);
     return (
       <section className="tables-container">
         <NavBarTables label="Mesas"/>

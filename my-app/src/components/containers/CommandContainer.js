@@ -14,15 +14,10 @@ const CommandContainer = (props) => {
   return (
     <section className="command-container">
       <NavBarTables label="Comanda" labelTwo=" - (Fulanito)" />
-      <main className="command" >
-        <TabsMenu />
-        <div className="command-div">
-          <Button className="summary" label="RESUMEN COMANDA"/>
-        </div>
-      </main>
-
-
-
+      <TabsMenu/>
+      <div className="command-div">
+        <Button className="summary" label="RESUMEN COMANDA"/>
+      </div>
     </section>
   );
 }
